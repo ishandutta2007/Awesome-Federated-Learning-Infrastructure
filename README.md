@@ -77,118 +77,118 @@ All platforms below are evaluated by organizational scale, core privacy architec
 
 Curated collection of open-source frameworks for self-hosting, cross-silo aggregation, differential privacy, and decentralized deep learning.
 
-> ⭐ Sorted descending by **GitHub Stars**:
+> ⭐ Sorted descending by **GitHub_Stars**:
 
 ### 1. [OpenMined PySyft](https://github.com/OpenMined/PySyft)
-[![GitHub stars](https://img.shields.io/github/stars/OpenMined/PySyft?style=social&color=white)](https://github.com/OpenMined/PySyft/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/OpenMined/PySyft?style=social&color=white)](https://github.com/OpenMined/PySyft/stargazers)
 - 🎯 **Primary Use Case**: Remote data science, secure multi-party computation (SMPC), and encrypted computation on remote servers.
 - ✨ **Key Features**: Decouples data access from computation; integrates Differential Privacy and homomorphic primitives; supports remote PyTorch execution across untrusted boundaries.
 - 🛠️ **Language / Ecosystem**: Python, C++
 
 ### 2. [Flower (flwr)](https://github.com/adap/flower)
-[![GitHub stars](https://img.shields.io/github/stars/adap/flower?style=social&color=white)](https://github.com/adap/flower/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/adap/flower?style=social&color=white)](https://github.com/adap/flower/stargazers)
 - 🎯 **Primary Use Case**: The industry-standard framework-agnostic federated learning platform from research to large-scale production.
 - ✨ **Key Features**: Native integrations with PyTorch, TensorFlow, Hugging Face Transformers, JAX, scikit-learn, XGBoost, and TFLite; cross-platform support across Linux clusters, macOS, iOS, Android, and Raspberry Pi / Jetson; 22+ verified baseline algorithm implementations (FedAvg, FedProx, FedNova, FedBN, etc.).
 - 🛠️ **Language / Ecosystem**: Python, C++, Swift, Java, Kotlin
 
 ### 3. [FATE (Federated AI Technology Enabler)](https://github.com/FederatedAI/FATE)
-[![GitHub stars](https://img.shields.io/github/stars/FederatedAI/FATE?style=social&color=white)](https://github.com/FederatedAI/FATE/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/FederatedAI/FATE?style=social&color=white)](https://github.com/FederatedAI/FATE/stargazers)
 - 🎯 **Primary Use Case**: Enterprise-grade industrial federated learning originated by Webank and hosted by the Linux Foundation.
 - ✨ **Key Features**: Full-stack framework supporting Horizontal FL, Vertical FL, and Federated Transfer Learning (FTL); hardware-accelerated homomorphic encryption; production orchestration with FATE-Flow and FATE-Board.
 - 🛠️ **Language / Ecosystem**: Python, Java, C++
 
 ### 4. [FedML](https://github.com/FedML-AI/FedML)
-[![GitHub stars](https://img.shields.io/github/stars/FedML-AI/FedML?style=social&color=white)](https://github.com/FedML-AI/FedML/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/FedML-AI/FedML?style=social&color=white)](https://github.com/FedML-AI/FedML/stargazers)
 - 🎯 **Primary Use Case**: Scalable distributed training, federated learning simulation, and serverless edge deployment.
 - ✨ **Key Features**: Domain-specific libraries: FedNLP (natural language), FedCV (computer vision), FedGraphNN (graph neural networks), and FedIoT (smart devices); cross-cloud scheduling across heterogeneous GPU clusters.
 - 🛠️ **Language / Ecosystem**: Python, C++
 
 ### 5. [Google Differential Privacy](https://github.com/google/differential-privacy)
-[![GitHub stars](https://img.shields.io/github/stars/google/differential-privacy?style=social&color=white)](https://github.com/google/differential-privacy/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/google/differential-privacy?style=social&color=white)](https://github.com/google/differential-privacy/stargazers)
 - 🎯 **Primary Use Case**: Production cryptographic libraries to compute $(\epsilon, \delta)$-differentially private metrics and aggregations.
 - ✨ **Key Features**: Multi-language support (C++, Go, Java, Python); includes Privacy-on-Beam for distributed pipeline evaluation and stochastic noise mechanisms (Laplace, Gaussian).
 - 🛠️ **Language / Ecosystem**: C++, Go, Java, Python
 
 ### 6. [TensorFlow Federated (TFF)](https://github.com/tensorflow/federated)
-[![GitHub stars](https://img.shields.io/github/stars/tensorflow/federated?style=social&color=white)](https://github.com/tensorflow/federated/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/tensorflow/federated?style=social&color=white)](https://github.com/tensorflow/federated/stargazers)
 - 🎯 **Primary Use Case**: Pioneering research and developer framework for decentralized computations and federated learning by Google.
 - ✨ **Key Features**: Two-layer API architecture: Federated Learning (FL) high-level API for model training/evaluation, and Federated Core (FC) low-level functional programming environment; seamless TensorFlow/Keras integration.
 - 🛠️ **Language / Ecosystem**: Python, C++
 
 ### 7. [Opacus](https://github.com/pytorch/opacus)
-[![GitHub stars](https://img.shields.io/github/stars/pytorch/opacus?style=social&color=white)](https://github.com/pytorch/opacus/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/pytorch/opacus?style=social&color=white)](https://github.com/pytorch/opacus/stargazers)
 - 🎯 **Primary Use Case**: High-speed Differential Privacy library for training PyTorch deep learning models with DP-SGD.
 - ✨ **Key Features**: Maintained by Meta AI; per-sample gradient clipping vectorized with PyTorch hooks; real-time $(\epsilon, \delta)$ privacy budget accountant (RDP); minimal training speed overhead.
 - 🛠️ **Language / Ecosystem**: Python, PyTorch
 
 ### 8. [NVIDIA FLARE (NVFlare)](https://github.com/NVIDIA/NVFlare)
-[![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NVFlare?style=social&color=white)](https://github.com/NVIDIA/NVFlare/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/NVIDIA/NVFlare?style=social&color=white)](https://github.com/NVIDIA/NVFlare/stargazers)
 - 🎯 **Primary Use Case**: Enterprise-grade federated learning runtime environment developed by NVIDIA for medical imaging and heavy enterprise AI.
 - ✨ **Key Features**: Controller-worker architecture; supports cyclic training, federated evaluation, cross-site validation, and homomorphic encryption; native integration with MONAI (Medical Open Network for AI).
 - 🛠️ **Language / Ecosystem**: Python
 
 ### 9. [LEAF](https://github.com/TalwalkarLab/leaf)
-[![GitHub stars](https://img.shields.io/github/stars/TalwalkarLab/leaf?style=social&color=white)](https://github.com/TalwalkarLab/leaf/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/TalwalkarLab/leaf?style=social&color=white)](https://github.com/TalwalkarLab/leaf/stargazers)
 - 🎯 **Primary Use Case**: Comprehensive benchmarking suite for federated and non-IID learning environments.
 - ✨ **Key Features**: Standardized non-IID datasets: FEMNIST (image classification), Sentiment140 (NLP), Shakespeare (language modeling), and CelebA; built-in metrics and modular evaluation pipelines.
 - 🛠️ **Language / Ecosystem**: Python
 
 ### 10. [OpenFL](https://github.com/securefederatedai/openfl)
-[![GitHub stars](https://img.shields.io/github/stars/securefederatedai/openfl?style=social&color=white)](https://github.com/securefederatedai/openfl/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/securefederatedai/openfl?style=social&color=white)](https://github.com/securefederatedai/openfl/stargazers)
 - 🎯 **Primary Use Case**: Flexible, agnostic Python framework originally developed by Intel Labs and the University of Pennsylvania (FeTS initiative).
 - ✨ **Key Features**: Native support for Hardware Security Enclaves (Intel SGX); mTLS-secured communication between Aggregator and Collaborator nodes; compatible with PyTorch and TensorFlow.
 - 🛠️ **Language / Ecosystem**: Python
 
 ### 11. [FedProx](https://github.com/litian96/FedProx)
-[![GitHub stars](https://img.shields.io/github/stars/litian96/FedProx?style=social&color=white)](https://github.com/litian96/FedProx/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/litian96/FedProx?style=social&color=white)](https://github.com/litian96/FedProx/stargazers)
 - 🎯 **Primary Use Case**: Canonical implementation of Federated Optimization in Heterogeneous Networks (MLSys).
 - ✨ **Key Features**: Adds a proximal term to local objective functions to guarantee convergence under extreme statistical (non-IID) and systems heterogeneity.
 - 🛠️ **Language / Ecosystem**: Python
 
 ### 12. [ML Privacy Meter](https://github.com/privacytrustlab/ml_privacy_meter)
-[![GitHub stars](https://img.shields.io/github/stars/privacytrustlab/ml_privacy_meter?style=social&color=white)](https://github.com/privacytrustlab/ml_privacy_meter/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/privacytrustlab/ml_privacy_meter?style=social&color=white)](https://github.com/privacytrustlab/ml_privacy_meter/stargazers)
 - 🎯 **Primary Use Case**: Quantitative auditing tool to measure privacy risks in statistical models via Membership Inference Attacks (MIA).
 - ✨ **Key Features**: Generates comprehensive privacy risk scores across individual training records; validates GDPR/HIPAA compliance in federated model updates.
 - 🛠️ **Language / Ecosystem**: Python, TensorFlow, PyTorch
 
 ### 13. [IBM Federated Learning Library](https://github.com/IBM/federated-learning-lib)
-[![GitHub stars](https://img.shields.io/github/stars/IBM/federated-learning-lib?style=social&color=white)](https://github.com/IBM/federated-learning-lib/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/IBM/federated-learning-lib?style=social&color=white)](https://github.com/IBM/federated-learning-lib/stargazers)
 - 🎯 **Primary Use Case**: Enterprise federated learning framework engineered for mission-critical hybrid cloud deployments.
 - ✨ **Key Features**: Multi-backend support (scikit-learn, PyTorch, Keras, TensorFlow v2, RLlib); optional fully homomorphic encryption (`crypto` module) on Linux x86 and IBM Z mainframes.
 - 🛠️ **Language / Ecosystem**: Python
 
 ### 14. [PaddleFL](https://github.com/PaddlePaddle/PaddleFL)
-[![GitHub stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleFL?style=social&color=white)](https://github.com/PaddlePaddle/PaddleFL/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/PaddlePaddle/PaddleFL?style=social&color=white)](https://github.com/PaddlePaddle/PaddleFL/stargazers)
 - 🎯 **Primary Use Case**: Decentralized federated learning framework built on the Baidu PaddlePaddle ecosystem.
 - ✨ **Key Features**: Out-of-the-box support for horizontal/vertical federated learning, secure multi-party computation (PrivC), and differential privacy in computer vision, recommendation systems, and NLP.
 - 🛠️ **Language / Ecosystem**: Python, C++
 
 ### 15. [FedScale](https://github.com/SymbioticLab/FedScale)
-[![GitHub stars](https://img.shields.io/github/stars/SymbioticLab/FedScale?style=social&color=white)](https://github.com/SymbioticLab/FedScale/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/SymbioticLab/FedScale?style=social&color=white)](https://github.com/SymbioticLab/FedScale/stargazers)
 - 🎯 **Primary Use Case**: Scalable, realistic benchmarking and runtime engine for edge and mobile federated learning.
 - ✨ **Key Features**: Emulates realistic client runtime behavior, device availability, battery constraints, and network latency; extensive empirical benchmark suite across speech, vision, and text.
 - 🛠️ **Language / Ecosystem**: Python
 
 ### 16. [Substra](https://github.com/Substra/substra)
-[![GitHub stars](https://img.shields.io/github/stars/Substra/substra?style=social&color=white)](https://github.com/Substra/substra/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/Substra/substra?style=social&color=white)](https://github.com/Substra/substra/stargazers)
 - 🎯 **Primary Use Case**: Open-source, production-ready federated learning software developed by Owkin and INRIA.
 - ✨ **Key Features**: Distributed ledger/ledger-agnostic audit trail; strict asset permission management; deployed across European hospital consortia (e.g., MELLODDY project).
 - 🛠️ **Language / Ecosystem**: Python, Go
 
 ### 17. [FedJAX](https://github.com/google/fedjax)
-[![GitHub stars](https://img.shields.io/github/stars/google/fedjax?style=social&color=white)](https://github.com/google/fedjax/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/google/fedjax?style=social&color=white)](https://github.com/google/fedjax/stargazers)
 - 🎯 **Primary Use Case**: Research-oriented JAX library for rapid algorithmic experimentation in federated learning.
 - ✨ **Key Features**: JIT-accelerated vectorized client updates using `jax.pmap` and `jax.vmap`; ideal for fast simulation of novel aggregation strategies.
 - 🛠️ **Language / Ecosystem**: Python, JAX
 
 ### 18. [FLSim](https://github.com/facebookresearch/FLSim)
-[![GitHub stars](https://img.shields.io/github/stars/facebookresearch/FLSim?style=social&color=white)](https://github.com/facebookresearch/FLSim/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/facebookresearch/FLSim?style=social&color=white)](https://github.com/facebookresearch/FLSim/stargazers)
 - 🎯 **Primary Use Case**: Lightweight, modular federated learning simulation engine developed by Meta AI.
 - ✨ **Key Features**: Simulates client dropouts, asynchronous aggregation, local differential privacy, and communication compression in resource-constrained environments.
 - 🛠️ **Language / Ecosystem**: Python, PyTorch
 
 ### 19. [FEDn](https://github.com/scaleoutsystems/fedn)
-[![GitHub stars](https://img.shields.io/github/stars/scaleoutsystems/fedn?style=social&color=white)](https://github.com/scaleoutsystems/fedn/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/scaleoutsystems/fedn?style=social&color=white)](https://github.com/scaleoutsystems/fedn/stargazers)
 - 🎯 **Primary Use Case**: Resilient, hierarchical federated learning system developed by Scaleout Systems.
 - ✨ **Key Features**: Distributed combiner nodes scaling horizontally; fault-tolerant state handling via gRPC and message brokers; supports both edge and cross-cloud topologies.
 - 🛠️ **Language / Ecosystem**: Python
@@ -252,10 +252,10 @@ Contributions are warmly welcomed! Help keep this ecosystem comprehensive, factu
 1. 🍴 **Fork the repository** to your personal GitHub account.
 2. 📝 **Add or update entries** in `README.md`:
    - For **SaaS platforms**: Include platform name, company valuation/funding, architecture focus, exact starting tier price, and specific free tier or trial duration/limits.
-   - For **Open-Source projects**: Include repository name, Shields.io social star badge linking to `/stargazers`, 2–3 sentence architecture summary, and supported frameworks.
+   - For **Open-Source projects**: Include repository name, Shields.io social Stars_Badge linking to `/stargazers`, 2–3 sentence architecture summary, and supported frameworks.
 3. 📐 **Keep table sorting consistent**:
    - SaaS platforms are sorted descending by **Company Scale (Valuation/Revenue)**.
-   - Open-source frameworks are sorted descending by **GitHub Stars**.
+   - Open-source frameworks are sorted descending by **GitHub_Stars**.
 4. 🚀 **Submit a Pull Request** with a concise description of changes.
 
 ---
