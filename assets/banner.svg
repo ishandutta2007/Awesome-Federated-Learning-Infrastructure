@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#bae6fd" />
+    </linearGradient>
+
+    <radialGradient id="glowPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Node Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Dynamic CSS Animations -->
+    <style>
+      @keyframes pulseNode {
+        0%, 100% { transform: scale(1); opacity: 0.7; }
+        50% { transform: scale(1.15); opacity: 1; }
+      }
+      @keyframes transmitLeft {
+        0% { cx: 200; cy: 190; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 600; cy: 220; opacity: 0; }
+      }
+      @keyframes transmitRight {
+        0% { cx: 1000; cy: 190; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 600; cy: 220; opacity: 0; }
+      }
+      @keyframes transmitBottomLeft {
+        0% { cx: 340; cy: 300; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 600; cy: 220; opacity: 0; }
+      }
+      @keyframes transmitBottomRight {
+        0% { cx: 860; cy: 300; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 600; cy: 220; opacity: 0; }
+      }
+      @keyframes floatCard {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-5px); }
+      }
+      @keyframes auraOrbit {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .bg-glow {
+        animation: pulseNode 6s ease-in-out infinite;
+      }
+      .packet-1 {
+        animation: transmitLeft 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .packet-2 {
+        animation: transmitRight 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.9s;
+      }
+      .packet-3 {
+        animation: transmitBottomLeft 3.4s cubic-bezier(0.4, 0, 0.2, 1) infinite 1.7s;
+      }
+      .packet-4 {
+        animation: transmitBottomRight 3.8s cubic-bezier(0.4, 0, 0.2, 1) infinite 2.3s;
+      }
+      .floating-pill {
+        animation: floatCard 4s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+
+  <!-- Background Grid Network -->
+  <g opacity="0.12" stroke="#38bdf8" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="400" y1="0" x2="400" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="800" y1="0" x2="800" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+  </g>
+
+  <!-- Animated Ambient Center Aura -->
+  <circle cx="600" cy="220" r="140" fill="url(#glowPulse)" class="bg-glow" />
+
+  <!-- Dotted Connection Trajectories (Underneath text and nodes) -->
+  <g stroke="rgba(129, 140, 248, 0.35)" stroke-width="2" stroke-dasharray="5 5">
+    <!-- Silo 1 to Aggregator -->
+    <line x1="200" y1="190" x2="600" y2="220" />
+    <!-- Silo 2 to Aggregator -->
+    <line x1="1000" y1="190" x2="600" y2="220" />
+    <!-- Silo 3 to Aggregator -->
+    <line x1="340" y1="300" x2="600" y2="220" />
+    <!-- Silo 4 to Aggregator -->
+    <line x1="860" y1="300" x2="600" y2="220" />
+  </g>
+
+  <!-- Dynamic Traveling Model Weight Packets -->
+  <circle class="packet-1" r="5" fill="#38bdf8" filter="url(#glow)" />
+  <circle class="packet-2" r="5" fill="#c084fc" filter="url(#glow)" />
+  <circle class="packet-3" r="4.5" fill="#34d399" filter="url(#glow)" />
+  <circle class="packet-4" r="4.5" fill="#f472b6" filter="url(#glow)" />
+
+  <!-- Node Elements (Background Graphic Accents) -->
+  <!-- Aggregator Hub (Center) -->
+  <g transform="translate(600, 220)">
+    <circle r="32" fill="#1e1b4b" stroke="#818cf8" stroke-width="2.5" filter="url(#glow)" />
+    <circle r="18" fill="#4338ca" />
+    <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#e0e7ff" text-anchor="middle">AGG</text>
+    <text x="0" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#a5b4fc" text-anchor="middle">Global Aggregator</text>
+  </g>
+
+  <!-- Edge Silo 1 (Far Left) -->
+  <g transform="translate(200, 190)">
+    <circle r="22" fill="#0f172a" stroke="#38bdf8" stroke-width="2" />
+    <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#38bdf8" text-anchor="middle">SILO A</text>
+    <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle">Local Hospital Silo</text>
+  </g>
+
+  <!-- Edge Silo 2 (Far Right) -->
+  <g transform="translate(1000, 190)">
+    <circle r="22" fill="#0f172a" stroke="#c084fc" stroke-width="2" />
+    <text x="0" y="4" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#c084fc" text-anchor="middle">SILO B</text>
+    <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle">Bank / FinTech Silo</text>
+  </g>
+
+  <!-- Edge Silo 3 (Bottom Left) -->
+  <g transform="translate(340, 300)">
+    <circle r="18" fill="#0f172a" stroke="#34d399" stroke-width="1.8" />
+    <text x="0" y="3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700" fill="#34d399" text-anchor="middle">TEE</text>
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle">Enclave Node</text>
+  </g>
+
+  <!-- Edge Silo 4 (Bottom Right) -->
+  <g transform="translate(860, 300)">
+    <circle r="18" fill="#0f172a" stroke="#f472b6" stroke-width="1.8" />
+    <text x="0" y="3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700" fill="#f472b6" text-anchor="middle">IOT</text>
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#94a3b8" text-anchor="middle">Edge Cluster</text>
+  </g>
+
+  <!-- FOREGROUND HEADER: Guaranteed Highest Layer & Crisp Contrast -->
+  <g id="header-text">
+    <!-- Top Pill Badges -->
+    <g class="floating-pill" transform="translate(600, 36)">
+      <rect x="-190" y="0" width="380" height="26" rx="13" fill="rgba(30, 41, 59, 0.85)" stroke="rgba(129, 140, 248, 0.4)" stroke-width="1" />
+      <text x="0" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600" fill="#e0e7ff" text-anchor="middle" letter-spacing="1.5">
+        🔒 PRIVACY-PRESERVING AI &amp; DISTRIBUTED MLOPS
+      </text>
+    </g>
+
+    <!-- Main Title (Crisp, High Contrast, Guaranteed Foreground) -->
+    <text x="600" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="800" fill="url(#textGrad)" text-anchor="middle" letter-spacing="-0.5">
+      Awesome Federated Learning Infrastructure
+    </text>
+
+    <!-- Subtitle (Clear, readable, unaffected by background movement) -->
+    <text x="600" y="134" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="400" fill="#94a3b8" text-anchor="middle">
+      Curated Landscape of Enterprise SaaS Clean Rooms, Open-Source Frameworks &amp; Secure Aggregation
+    </text>
+
+    <!-- Feature Pillars -->
+    <g transform="translate(600, 162)">
+      <!-- Tag 1 -->
+      <rect x="-240" y="0" width="105" height="20" rx="10" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1" />
+      <text x="-187.5" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#38bdf8" text-anchor="middle">Cross-Silo FL</text>
+
+      <!-- Tag 2 -->
+      <rect x="-125" y="0" width="115" height="20" rx="10" fill="rgba(129, 140, 248, 0.12)" stroke="rgba(129, 140, 248, 0.35)" stroke-width="1" />
+      <text x="-67.5" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#818cf8" text-anchor="middle">Confidential TEE</text>
+
+      <!-- Tag 3 -->
+      <rect x="0" y="0" width="115" height="20" rx="10" fill="rgba(192, 132, 252, 0.12)" stroke="rgba(192, 132, 252, 0.35)" stroke-width="1" />
+      <text x="57.5" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#c084fc" text-anchor="middle">Homomorphic HE</text>
+
+      <!-- Tag 4 -->
+      <rect x="125" y="0" width="125" height="20" rx="10" fill="rgba(52, 211, 153, 0.12)" stroke="rgba(52, 211, 153, 0.35)" stroke-width="1" />
+      <text x="187.5" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="600" fill="#34d399" text-anchor="middle">Differential Privacy</text>
+    </g>
+  </g>
+</svg>
